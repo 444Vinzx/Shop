@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Detail Produk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <b onclick="history.back()">←</b>
+  <span>Detail Produk</span>
+</header>
+
+<section class="detail">
+  <img id="pImage" class="product-img">
+
+  <h2 id="pName"></h2>
+  <small id="pCat"></small>
+
+  <div class="discount">
+    <span class="old-price" id="oldPrice"></span>
+    <span class="save" id="saveText"></span>
+  </div>
+
+  <div class="price-label" id="pLabel"></div>
+  <div class="price-big" id="pPrice"></div>
+  <div class="stock" id="stockText"></div>
+
+  <div class="activation" id="activationText"></div>
+
+  <p id="pDesc"></p>
+
+  <div class="options">
+    <button class="opt active" onclick="selectOption('1',this)">1 Bulan</button>
+    <button class="opt" onclick="selectOption('2',this)">2 Bulan</button>
+    <button class="opt best" onclick="selectOption('life',this)">
+      Lifetime <span class="badge">Best Deal</span>
+    </button>
+  </div>
+
+  <button onclick="buyNow()">Beli Sekarang</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

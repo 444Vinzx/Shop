@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vian Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <b>Vian Shop</b>
+</header>
+
+<section class="banner">
+  <h2>Premium Murah & Aman</h2>
+  <p>Aktivasi cepat • Garansi</p>
+</section>
+
+<section class="market">
+  <h3>Produk Premium</h3>
+
+  <div class="market-grid">
+
+    <!-- CAPCUT -->
+    <div class="market-card"
+      onclick="openProduct(
+        'CapCut Pro',
+        'APK Editing',
+        'Editing video tanpa watermark dan fitur premium.',
+        'https://upload.wikimedia.org/wikipedia/commons/3/3f/CapCut_logo.svg',
+        { '1':10000, '2':15000, 'life':35000 }
+      )">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/CapCut_logo.svg">
+      <h4>CapCut Pro</h4>
+      <span>Mulai Rp 10.000</span>
+    </div>
+
+    <!-- CANVA -->
+    <div class="market-card"
+      onclick="openProduct(
+        'Canva Pro',
+        'APK Editing',
+        'Akses semua fitur premium Canva tanpa batas.',
+        'canva.png',
+        { '1':12000, '2':18000, 'life':40000 }
+      )">
+      <img src="canva.png">
+      <h4>Canva Pro</h4>
+      <span>Mulai Rp 12.000</span>
+    </div>
+
+    <!-- EXPRESS VPN -->
+    <div class="market-card"
+      onclick="openProduct(
+        'ExpressVPN',
+        'VPN Premium',
+        'VPN cepat, aman, dan stabil.',
+        'https://upload.wikimedia.org/wikipedia/commons/5/5f/ExpressVPN-logo.svg',
+        { '1':20000, '2':30000, 'life':60000 }
+      )">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/ExpressVPN-logo.svg">
+      <h4>ExpressVPN</h4>
+      <span>Mulai Rp 20.000</span>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+*{box-sizing:border-box;font-family:Arial}
+body{margin:0;background:#f9fafb;color:#111}
+
+.topbar{
+  padding:14px;background:#fff;
+  box-shadow:0 1px 4px rgba(0,0,0,.1);
+  display:flex;gap:10px;align-items:center;
+}
+.topbar b{color:#10b981;font-size:18px;cursor:pointer}
+
+.banner{
+  margin:14px;padding:22px;border-radius:16px;
+  background:linear-gradient(135deg,#10b981,#059669);
+  color:#fff;
+}
+
+.market{margin:14px}
+.market-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:12px;
+}
+.market-card{
+  background:#fff;padding:16px;border-radius:16px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  cursor:pointer;text-align:center;
+}
+.market-card img{
+  width:50px;height:50px;object-fit:contain;margin-bottom:10px;
+}
+.market-card span{color:#10b981;font-weight:600}
+
+.detail{padding:20px}
+.product-img{width:80px;height:80px;object-fit:contain;margin-bottom:10px}
+
+.price-big{font-size:28px;font-weight:700;color:#10b981}
+.price-label{font-size:14px;color:#6b7280}
+
+.discount{display:flex;gap:10px;margin-top:10px}
+.old-price{text-decoration:line-through;color:#9ca3af}
+.save{color:#ef4444;font-weight:600;font-size:13px}
+
+.stock{margin-top:8px;color:#ef4444;font-weight:600}
+
+.activation{
+  margin-top:10px;font-size:13px;
+  background:#f0fdf4;border-left:4px solid #10b981;
+  padding:10px;border-radius:8px;
+}
+
+.options{display:flex;gap:10px;margin:20px 0}
+.opt{
+  flex:1;padding:12px;border-radius:14px;
+  border:1px solid #ddd;background:#fff;color:#111;
+}
+.opt.active{border:2px solid #10b981;background:#ecfdf5}
+.opt.best{border:2px solid #10b981;position:relative}
+
+.badge{
+  position:absolute;top:-8px;right:-6px;
+  background:#10b981;color:#fff;
+  font-size:10px;padding:3px 6px;border-radius:10px;
+}
+
+button{
+  width:100%;padding:14px;border:none;
+  border-radius:14px;background:#10b981;
+  color:#fff;font-weight:600;
+}
+
+.center{display:flex;justify-content:center;align-items:center;height:100vh}
+.box{
+  background:#fff;padding:30px;border-radius:16px;
+  width:280px;text-align:center;
+}
+.qris{width:200px;margin:16px 0}
